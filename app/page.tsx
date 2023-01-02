@@ -13,10 +13,10 @@ const Home = (props: Props) => {
     <>
     <Hero/>
     <About/>
-    <Skills/>
-    <Projects/>
-    <Contact/>
-    <Footer/>
+    {/* <Skills/> */}
+    {/* <Projects/> */}
+    {/* <Contact/> */}
+    {/* <Footer/> */}
     </>
   )
 }
