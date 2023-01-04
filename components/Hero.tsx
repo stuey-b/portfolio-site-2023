@@ -4,7 +4,7 @@ type Props = {}
 
 const Hero = (props: Props) => {
   return (
-    <section className=' text-slate-900 flex justify-center items-center  bg-amber-100 h-screen'>
+    <section className=' text-slate-900 flex justify-center items-center bg-amber-100 h-screen snap-y snap-mandatory'>
       <div className=' flex flex-col justify-center content-start h-1/3 w-5/6 max-w-xl px-4 space-y-8'>
         <p className='  text-rose-500 text-sm font-light'>What?... Stuart is evolving! (Duh Duh Duh DUN!)<br />Congratulations! Stuart evolved into a... </p> 
         {/* make this dynamic - tea drinker / react/python enthusiast /  */}
