@@ -2,6 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+
+  section {
+    @apply snap-start flex flex-col justify-center items-center h-screen
+  }
+
+  h2 {
+    @apply text-4xl font-black text-slate-900 pb-2
+  }
+
+  span {
+    @apply text-rose-500
+  }
+
+  button {
+    @apply bg-transparent w-28 h-10 rounded border-2 font-semibold
+  }
+
+  .SnapContainer {
+    @apply snap-y snap-mandatory overflow-scroll h-screen z-0
+
+ }
+  .InnerSection {
+    @apply flex flex-col justify-center h-1/4 w-5/6 gap-y-8
+  }
+
+  .FormInput {
+    @apply bg-transparent border-b-2 mb-2 h-10 border-slate-800 outline-none resize-none
+  }
+}
+
 
 *,
 *::before,
@@ -51,4 +82,3 @@ body::before {
 body::after {
   bottom: 0;
 }
-

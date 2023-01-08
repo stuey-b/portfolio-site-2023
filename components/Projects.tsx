@@ -4,21 +4,57 @@ type Props = {}
 
 const Projects = (props: Props) => {
   return (
-    <section className="px-14 flex flex-col justify-center bg-teal-100 h-screen">
-      <div className=" flex flex-col justify-center h-2/3 gap-4">
-        <h2 className="text-4xl font-black text-slate-900">
-          Projects<span className="text-pink-500">.</span>
-        </h2>
-        <div className=" flex flex-col justify-center">
-            <div className="grid grid-cols-1">
-                <h3>Project 1</h3>
-                
-                <button className= 'w-28 h-10 rounded border-2 font-semibold border-slate-800'>Certificate</button>
+    <section id='projects' className='bg-teal-100'>
+  <div className="InnerSection">
+        <h2>Projects<span>.</span></h2>
+        <div className="grid grid-cols-1 gap-y-4 text-sm">
+          <div className='flex flex-col just p-8 gap-y-4 bg-slate-500 rounded-tr-3xl rounded-bl-3xl'>
+            <h3 className='text-lg font-bold'>Personal Website</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae inventore sint nulla saepe vel optio suscipit illo, facilis veniam, nemo ab perspiciatis earum totam similique error praesentium sunt odio natus!
+            </p>
+            <div>
+              <ul className=' flex gap-x-4 font-light text-sm'>
+                <li className=''>Next.js</li>
+                <li className=''>TS</li>
+                <li className=''>Tailwind</li>
+                <li className=''>Framer Motion</li>
+              </ul>
             </div>
-            
+          </div>
+          <div className='flex flex-col p-8 gap-y-4 bg-slate-500 rounded-tr-3xl rounded-bl-3xl'>
+            <h3 className='text-lg font-bold'>Cat-a-kana: Japanese Study</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae inventore sint nulla saepe vel optio suscipit illo, facilis veniam, nemo ab perspiciatis earum totam similique error praesentium sunt odio natus!
+            </p>
+            <div>
+              <ul className=' flex justify-start gap-x-4 font-light text-sm'>
+                <li className=''>React</li>
+                <li className=''>Tailwind</li>
+                <li className=''></li>
+              </ul>
+            </div>
+          </div>
+          <div className='flex flex-col p-8 gap-y-4 bg-slate-500 rounded-tr-3xl rounded-bl-3xl'>
+            <h3 className='text-lg font-bold'> Organic Website</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae inventore sint nulla saepe vel optio suscipit illo, facilis veniam, nemo ab perspiciatis earum totam similique error praesentium sunt odio natus!
+            </p>
+            <div>
+              <ul className=' flex justify-start gap-x-4 font-light text-sm'>
+                <li className=''>HTML</li>
+                <li className=''>CSS</li>
+                <li className=''>JS</li>
+              </ul>
+            </div>
+          </div>
+        
+       
+
+ 
         </div>
       </div>
     </section>
+ 
+      
+ 
   )
 }
 

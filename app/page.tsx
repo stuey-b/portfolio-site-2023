@@ -7,21 +7,27 @@ import Hero from '../components/Hero'
 import Header from '../components/Header'
 import Projects from '../components/Projects'
 import Skills from '../components/Skills'
+import Menu from '../components/Menu'
 
 type Props = {}
 
 const Home = (props: Props) => {
   return (
-    <>
+    
+    <div className='SnapContainer'>
       <Header />
-      {/* <Hero/>
+      <Hero/>
+      {/* <Menu /> */}
+    
       <About/>
       <Skills/>
       <Certs/>
       <Projects/>
-      <Contact/> */}
+      <Contact/>
       <Footer/>
-    </>
+    </div>
+     
+  
   )
 }
 
