@@ -29,7 +29,6 @@ const Projects = (props: Props) => {
               <ul className=' flex justify-start gap-x-4 font-light text-sm'>
                 <li className=''>React</li>
                 <li className=''>Tailwind</li>
-                <li className=''></li>
               </ul>
             </div>
           </div>
