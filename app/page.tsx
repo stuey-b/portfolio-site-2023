@@ -21,7 +21,6 @@ const Home = (props: Props) => {
     
       <About/>
       <Skills/>
-      <Certs/>
       <Projects/>
       <Contact/>
       <Footer/>

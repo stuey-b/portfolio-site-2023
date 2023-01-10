@@ -9,7 +9,7 @@
   }
 
   h2 {
-    @apply text-4xl font-black text-slate-900 pb-2
+    @apply text-4xl font-black text-slate-900 mb-4 text-center
   }
 
   span {
@@ -19,7 +19,11 @@
   button {
     @apply bg-transparent w-28 h-10 rounded border-2 font-semibold
   }
+ 
+}
 
+@layer components {
+  
   .SnapContainer {
     @apply snap-y snap-mandatory overflow-scroll h-screen z-0
 

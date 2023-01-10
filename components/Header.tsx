@@ -15,7 +15,7 @@ const Header = (props: Props) => {
         height={512}
         />
         </a>
-      <div className="space-y-2" id="hamburger-menu">
+      <div className="space-y-2 cursor-pointer" id="hamburger-menu">
         <div className="w-10 h-1 rounded bg-slate-800"></div>
         <div className=" ml-2 w-8 h-1 rounded bg-slate-800"></div>
         <div className="w-6 h-1 ml-4 rounded bg-slate-800"></div>

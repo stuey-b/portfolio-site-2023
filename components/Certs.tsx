@@ -19,15 +19,15 @@ const Certs = (props: Props) => {
                 width={250}
               />
             </a>
-            <button className="w-28 h-10 rounded border-2 font-semibold border-slate-800">
+            <button>
               Certificate
             </button>
             <div className="flex flex-col items-start gap-y-4">
-            <h3 className="text-lg font-bold">100 Days of Code: The Complete Python Pro Bootcamp for 2023</h3>
+            <h3 className="text-lg font-bold">100 Days of Code: The Complete Python Pro Bootcamp for 2022</h3>
             <a href="">
               <Image src="/angela-python.jpeg" alt="" height={10} width={250} />
             </a>
-            <button className="w-28 h-10 rounded border-2 font-semibold border-slate-800">
+            <button>
               Certificate
             </button>
           </div>
