@@ -13,11 +13,11 @@ const Projects = (props: Props) => {
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae inventore sint nulla saepe vel optio suscipit illo, facilis veniam, nemo ab perspiciatis earum totam similique error praesentium sunt odio natus!
             </p>
             <div>
-              <ul className=' flex gap-x-4 font-light text-sm'>
-                <li className=''>Next.js</li>
-                <li className=''>TS</li>
-                <li className=''>Tailwind</li>
-                <li className=''>Framer Motion</li>
+              <ul className='flex gap-x-4 font-light text-sm'>
+                <li>Next.js</li>
+                <li>TS</li>
+                <li>Tailwind</li>
+                <li>Framer Motion</li>
               </ul>
             </div>
           </div>

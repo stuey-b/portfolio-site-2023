@@ -112,4 +112,4 @@ export const certificates = [
     cert: "https://www.udemy.com/certificate/UC-208399b1-0bcb-4645-a352-2e6a0afaa611/"
   },
   
-]
+];

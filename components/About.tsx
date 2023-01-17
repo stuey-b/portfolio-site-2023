@@ -5,16 +5,16 @@ type Props = {};
 
 const About = (props: Props) => {
   return (
-    <section className="snap-center flex flex-col justify-center items-center bg-emerald-100 h-screen">
-      <div className="flex flex-col justify-center content-center h-1/3 w-5/6 max-w-xl px-4 space-y-8">
-        <h2 className="text-4xl font-black text-slate-900">About Me<span>.</span></h2>
-        <div className="gap-4">
+    <section className="bg-teal-100">
+      <div className="InnerSection">
+        <h2>About Me<span>.</span></h2>
+        <div className=" flex flex-col justify-center items-center gap-4">
           <Image
-            className="-mt-12 -mb-16"
-            src="/logo.png"
-            alt="logo"
-            width={512}
-            height={512}
+            className=""
+            src="/profile-pic.JPG"
+            alt="profile-pic"
+            width={200}
+            height={200}
           />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos

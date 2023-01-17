@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { certificates, skillBadges } from "../constants";
+import { certificates, skillBadges, socials } from "../constants";
 
 type Props = {};
 
@@ -30,11 +30,28 @@ const Skills = (props: Props) => {
             <div className="justify-items-center items-center grid grid-cols-2 gap-4">
                 {certificates.map((certificate) => (
                   <>
+                  <div>
                   <h3
                     key={certificate.name}
                     className="font-bold">
                     {certificate.title}
                   </h3>
+                  <a href="">
+                
+                      <Image
+
+                      src=""
+                      alt="certificate-icon"
+                      width={50}
+                      height={50}
+                      
+                      />
+
+                  </a>
+
+                  </div>
+                  
+
                   <Image
                       src={certificate.src}
                       alt={certificate.alt}
@@ -44,10 +61,7 @@ const Skills = (props: Props) => {
 
                 ))}
                 
-             
-              <a href="">
-                
-              </a>
+      
             </div>
           </div>
         </div>

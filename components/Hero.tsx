@@ -10,7 +10,7 @@ const Hero = (props: Props) => {
         <p className=' text-rose-500 text-sm '>What? Stuart is evolving!<i> ~ DUH DUH DUN DUNN! ~</i> <br />Congratulations! Stuart evolved into a... </p> 
         {/* make this dynamic - tea drinker / react/python enthusiast /  */}
         <h1 className='text-5xl font-black text-indigo-800'>Frontend <br /> Developer<span>.</span></h1>
-        <p className=''>Hey, I&apos;m Stuart. Don&apos;t freak out..I&apos;m not a Pokemon, but I am wild enough to try and change careers in my mid 30&apos;s. I spent 2022 studying python and web development, now I&apos;m ready to embrace my final evolution as a developer. React, I choose you! </p>
+        <p className=''>Hey, I&apos;m Stuart. Don&apos;t freak out..I&apos;m not a Pokemon, but I am wild enough to try and change careers in my mid 30&apos;s. I spent 2022 studying python and web development, now I&apos;m ready to embrace my final evolution as a developer.</p>
         <div className='flex space-x-4'>
           <a href="
           "><button>Resume</button>

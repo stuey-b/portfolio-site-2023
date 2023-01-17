@@ -4,6 +4,10 @@
 
 @layer base {
 
+  header {
+    @apply flex fixed items-center justify-between h-32 pt-4 pr-14 w-screen bg-transparent
+  }
+
   section {
     @apply snap-start flex flex-col justify-center items-center h-screen
   }
