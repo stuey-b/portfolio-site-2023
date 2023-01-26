@@ -12,7 +12,7 @@ const Header = (props: Props) => {
 
   return (
     <header>
-        <a className="pl-2" href="#">
+        <a className="pl-2" href="#hero">
           <Image src="/logo.png" alt="test" width={120} height={512} />
         </a>
         <div className="space-y-2 cursor-pointer" id="hamburger-menu">
