@@ -10,7 +10,7 @@ const currentYear = new Date().getFullYear();
 
 const Footer = (props: Props) => {
   return (
-    <section className="bg-emerald-100">
+    <section id="footer" className="bg-emerald-100">
       <div className="InnerSection">
         <div className="flex justify-evenly">
           {socials.map((social) => (

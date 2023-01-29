@@ -5,7 +5,7 @@ type Props = {};
 
 const About = (props: Props) => {
   return (
-    <section className="bg-teal-100">
+    <section id="about" className="bg-teal-100">
       <div className="InnerSection">
         <h2>About Me<span>.</span></h2>
         <div className=" flex flex-col justify-center items-center gap-4">

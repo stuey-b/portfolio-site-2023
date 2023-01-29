@@ -3,23 +3,47 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Menu from "./Menu";
-// import { motion } from "framer-motion";
+import {CgMenuRight} from "react-icons/cg"
+import {CgClose} from "react-icons/cg"
 
 type Props = {};
 
 const Header = (props: Props) => {
-  const [hideMenu, setHideMenu] = useState(true);
+  const [showMenu, setShowMenu] = useState(false);
+  const closeMenu = () => setShowMenu(false);
+
+  const hamburgerIcon = <CgMenuRight
+  className="cursor-pointer z-50"
+  size="45px"
+  onClick={() => setShowMenu(!showMenu)}
+  />
+  const closedMenuIcon = <CgClose
+  className="cursor-pointer z-50"
+  size="45px"
+  onClick={() => setShowMenu(!showMenu)}
+  />
+
 
   return (
+
     <header>
-        <a className="pl-2" href="#hero">
-          <Image src="/logo.png" alt="test" width={120} height={512} />
-        </a>
-        <div className="space-y-2 cursor-pointer" id="hamburger-menu">
-          <div className="w-10 h-1 rounded bg-slate-800"></div>
-          <div className=" ml-2 w-8 h-1 rounded bg-slate-800"></div>
-          <div className="w-6 h-1 ml-4 rounded bg-slate-800"></div>
+      <a className="pl-2" href="#hero">
+        <Image src="/logo.png" alt="logo" width={120} height={512} />
+      </a>
+      {showMenu ? closedMenuIcon : hamburgerIcon}
+      {showMenu && <section className="bg-white fixed top-0 left-0 w-screen">
+      <nav>
+        <div className='flex flex-col text-black text-4xl font-black gap-y-8' >
+        <a onClick={() => closeMenu()} href="#about">About</a>
+        <a onClick={() => closeMenu()} href="#skills">Skills</a>
+        <a onClick={() => closeMenu()} href="#projects">Project</a>
+        <a onClick={() => closeMenu()} href="#contact">Contact</a>
+        <a onClick={() => closeMenu()} href="#footer">Links</a>
         </div>
+      </nav>
+    </section>
+      }
+      
     </header>
   );
 };

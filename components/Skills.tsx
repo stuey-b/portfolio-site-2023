@@ -6,7 +6,7 @@ type Props = {};
 
 const Skills = (props: Props) => {
   return (
-    <section className="bg-blue-100">
+    <section id="skills" className="bg-blue-100">
       <div className="InnerSection">
         <div className="flex flex-col gap-y-4">
           <h2>
