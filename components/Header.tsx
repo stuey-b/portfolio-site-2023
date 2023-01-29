@@ -2,25 +2,25 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import Menu from "./Menu";
-import {CgMenuRight} from "react-icons/cg"
-import {CgClose} from "react-icons/cg"
+import { CgMenuRight } from "react-icons/cg"
+import { CgClose } from "react-icons/cg"
 
 type Props = {};
 
 const Header = (props: Props) => {
+
   const [showMenu, setShowMenu] = useState(false);
   const closeMenu = () => setShowMenu(false);
 
   const hamburgerIcon = <CgMenuRight
-  className="cursor-pointer z-50"
-  size="45px"
-  onClick={() => setShowMenu(!showMenu)}
+    className="cursor-pointer z-50"
+    size="45px"
+    onClick={() => setShowMenu(!showMenu)}
   />
   const closedMenuIcon = <CgClose
-  className="cursor-pointer z-50"
-  size="45px"
-  onClick={() => setShowMenu(!showMenu)}
+    className="cursor-pointer z-50"
+    size="45px"
+    onClick={() => setShowMenu(!showMenu)}
   />
 
 
@@ -32,18 +32,17 @@ const Header = (props: Props) => {
       </a>
       {showMenu ? closedMenuIcon : hamburgerIcon}
       {showMenu && <section className="bg-white fixed top-0 left-0 w-screen">
-      <nav>
-        <div className='flex flex-col text-black text-4xl font-black gap-y-8' >
-        <a onClick={() => closeMenu()} href="#about">About</a>
-        <a onClick={() => closeMenu()} href="#skills">Skills</a>
-        <a onClick={() => closeMenu()} href="#projects">Project</a>
-        <a onClick={() => closeMenu()} href="#contact">Contact</a>
-        <a onClick={() => closeMenu()} href="#footer">Links</a>
-        </div>
-      </nav>
-    </section>
+        <nav>
+          <div className='flex flex-col text-black text-3xl font-black gap-y-8' >
+            <a onClick={() => closeMenu()} href="#about">About</a>
+            <a onClick={() => closeMenu()} href="#skills">Skills</a>
+            <a onClick={() => closeMenu()} href="#projects">Projects</a>
+            <a onClick={() => closeMenu()} href="#contact">Contact</a>
+            <a onClick={() => closeMenu()} href="#footer">Links</a>
+          </div>
+        </nav>
+      </section>
       }
-      
     </header>
   );
 };
