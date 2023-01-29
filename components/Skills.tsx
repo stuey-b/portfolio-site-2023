@@ -8,25 +8,27 @@ const Skills = (props: Props) => {
   return (
     <section id="skills" className="bg-blue-100">
       <div className="InnerSection">
-        <div className="flex flex-col gap-y-4">
+        <div className="md:flex flex-col lg:grid grid-cols-2 grid-rows-2 items-center lg:gap-16">
           <h2>
             Skills<span>.</span>
           </h2>
-          <div className="justify-items-center items-center grid grid-cols-3 grid-rows-4 gap-4 mb-8">
-            {skillBadges.map((skillBadge) => (
-              <Image
-                key={skillBadge.name}
-                src={skillBadge.src}
-                alt={skillBadge.alt}
-                width={65}
-                height={100}
-              />
-            ))}
+          <div>
+            <div className="justify-items-center items-center grid grid-cols-3 grid-rows-4 gap-4 mb-8">
+              {skillBadges.map((skillBadge) => (
+                <Image
+                  key={skillBadge.name}
+                  src={skillBadge.src}
+                  alt={skillBadge.alt}
+                  width={65}
+                  height={100}
+                />
+              ))}
+            </div>
           </div>
-          <div className="flex flex-col gap-y-4">
-            <h2>
-              Certs<span>.</span>
-            </h2>
+          <h2 className="col-start-2">
+            Certs<span>.</span>
+          </h2>
+          <div className="col-start-1 row-start-2">
             <div className="justify-items-center items-start grid grid-cols-2 gap-4">
               {certificates.map((certificate) => (
                 <>

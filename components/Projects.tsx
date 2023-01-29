@@ -7,7 +7,7 @@ const Projects = (props: Props) => {
     <section id='projects' className='bg-teal-100'>
   <div className="InnerSection">
         <h2>Projects<span>.</span></h2>
-        <div className="grid grid-cols-1 gap-y-4 auto-rows-fr text-sm">
+        <div className="grid grid-cols-1 gap-y-4 auto-rows-fr text-sm md:text-base">
           <div className='flex flex-col justify-center p-8 gap-y-4 bg-slate-500 rounded-tr-3xl rounded-bl-3xl'>
             <h3 className='text-lg font-bold'>Personal Website</h3>
             <p>I wanted somewhere to post my growing portfolio of web development projects and to show off my personality and design skills. I plan to incorporate Framer Motion animations in the near future.

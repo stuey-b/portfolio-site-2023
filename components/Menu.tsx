@@ -33,7 +33,7 @@ const Header = (props: Props) => {
       {showMenu ? closedMenuIcon : hamburgerIcon}
       {showMenu && <section className="bg-white fixed top-0 left-0 w-screen">
         <nav>
-          <div className='flex flex-col text-black text-3xl font-black gap-y-8' >
+          <div className=' md:text-4xl flex flex-col text-black text-3xl font-black gap-y-8' >
             <a onClick={() => closeMenu()} href="#about">About</a>
             <a onClick={() => closeMenu()} href="#skills">Skills</a>
             <a onClick={() => closeMenu()} href="#projects">Projects</a>

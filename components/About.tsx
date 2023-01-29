@@ -11,18 +11,19 @@ const About = (props: Props) => {
         <h2>
           About Me<span>.</span>
         </h2>
-        <div className=" flex flex-col justify-center items-center gap-8">
+        <div className=" flex  flex-col justify-center gap-8 lg:grid grid-cols-2 items-center">
           <Image
-            className=" border-8 border-white rounded-3xl"
+            className=" border-8 border-white rounded-3xl mx-auto mb-3 lg:w-64"
             src="/profile-pic.JPG"
             alt="profile-pic"
             width={200}
             height={200}
           />
+          <div className="flex flex-col gap-y-8">
           <p>
-            In 2022, I made the decision to become a developer. I was ready for
-            a new challenge at the age of 35. <br />
-            Nervous? Naturally. Excited? TOTALLY!
+            In January of 2022 I turned 35 and made the decision to become a developer. I was ready for
+            a new challenge and eager to leave behind my life as an English teacher.
+            Nervous?&nbsp; Naturally.&nbsp; Excited?&nbsp; TOTALLY!
           </p>
           <p>
             Over the past year, I&apos;ve completed 2 programming bootcamps. I
@@ -47,6 +48,10 @@ const About = (props: Props) => {
               <strong>HERE.</strong>
             </a>
           </p>
+
+
+          </div>
+          
         </div>
       </div>
     </section>

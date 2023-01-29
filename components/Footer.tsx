@@ -26,6 +26,7 @@ const Footer = (props: Props) => {
                 alt={social.alt}
                 width={50}
                 height={50}
+                className="md:w-16"
               />
             </a>
           ))}
