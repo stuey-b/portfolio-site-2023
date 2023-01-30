@@ -101,7 +101,7 @@ export const certificates = [
     src: "/angela-web-dev.jpeg",
     alt: "web-dev-course-thumb",
     href: "https://www.udemy.com/course/the-complete-web-development-bootcamp/",
-    cert: "https://www.udemy.com/certificate/UC-d6f6739d-07a9-4097-8834-56f32e0163f3/"
+    cert: "https://www.udemy.com/certificate/UC-d6f6739d-07a9-4097-8834-56f32e0163f3/",
   },
   {
     name: "python-cert",
@@ -109,8 +109,33 @@ export const certificates = [
     src: "/angela-python.jpeg",
     alt: "python-course-thumb",
     href: "https://www.udemy.com/course/100-days-of-code/",
-    cert: "https://www.udemy.com/certificate/UC-208399b1-0bcb-4645-a352-2e6a0afaa611/"
+    cert: "https://www.udemy.com/certificate/UC-208399b1-0bcb-4645-a352-2e6a0afaa611/",
   },
-  
 ];
 
+export const projects = [
+  {
+    name: "personal-website",
+    title: "Personal Website",
+    desc: "I wanted somewhere to post my growing portfolio of web development projects and to show off my personality and design skills. I plan to incorporate Framer Motion animations in the near future.",
+    tech: ["Next.js", "TypeScript", "Tailwind"],
+    src: "/footer-icons/github-icon.svg",
+    href: "https://github.com/stuey-b/portfolio-site-2023"
+  },
+  {
+    name: "cat-a-kana-study-app",
+    title: "Cat-a-kana: Japanese Study",
+    desc: "Cool name ay? Learning the Japanese syllabaries can be stressful, so I created something simple that people could use on the go. A cat judges your score and provides encouragement.",
+    tech: ["React", "JavaScript", "Tailwind"],
+    src: "/footer-icons/github-icon.svg",
+    href: "https://github.com/stuey-b/cat-a-kana-quiz"
+  },
+  {
+    name: "organic-produce-website",
+    title: "Organic Produce Website",
+    desc: "I took a design from the internet and tried my best to recreate it using HTML, CSS and Javascript. I tweaked the desktop UI, made the site responsive and added a functioning mobile menu.",
+    tech: ["HTML", "CSS","JavaScript"],
+    src: "/footer-icons/github-icon.svg",
+    href: "https://github.com/stuey-b/organic-website",
+  },
+];

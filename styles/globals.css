@@ -17,19 +17,19 @@
   }
 
   h2 {
-    @apply xl:text-5xl text-4xl font-black text-slate-900 mb-4 text-center
+    @apply text-4xl font-black text-slate-900 mb-4 text-center xl:text-5xl
   }
 
-  p {
+  /* p {
     @apply text-left
-  }
+  } */
 
   span {
     @apply text-rose-500
   }
 
   button {
-    @apply bg-transparent w-28 h-10 rounded border-2 font-semibold
+    @apply bg-transparent w-28 h-10 rounded border-2 border-slate-800 font-semibold
   }
  
 }
@@ -41,7 +41,7 @@
 
  }
   .InnerSection {
-    @apply md:max-w-xl lg:max-w-3xl xl:max-w-4xl flex flex-col justify-center h-1/4 w-5/6 gap-y-8
+    @apply  flex flex-col justify-center h-1/4 w-5/6 gap-y-8 md:max-w-xl lg:max-w-4xl xl:max-w-6xl
   }
 
   .FormInput {

@@ -1,7 +1,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { socials } from "../constants/constants";
+import { socials } from "../constants";
 
 
 type Props = {};

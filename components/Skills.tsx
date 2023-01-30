@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { certificates, skillBadges, socials } from "../constants/constants";
+import { certificates, skillBadges, socials } from "../constants";
 
 type Props = {};
 
@@ -8,12 +8,12 @@ const Skills = (props: Props) => {
   return (
     <section id="skills" className="bg-blue-100">
       <div className="InnerSection">
-        <div className="md:flex flex-col lg:grid grid-cols-2 grid-rows-2 items-center lg:gap-16">
+        <div className="lg:grid grid-cols-2 justify-center items-center auto-rows-fr">
           <h2>
             Skills<span>.</span>
           </h2>
-          <div>
-            <div className="justify-items-center items-center grid grid-cols-3 grid-rows-4 gap-4 mb-8">
+          <div className="">
+            <div className="justify-items-center items-center grid grid-cols-3 grid-rows-4 gap-4">
               {skillBadges.map((skillBadge) => (
                 <Image
                   key={skillBadge.name}
@@ -21,11 +21,12 @@ const Skills = (props: Props) => {
                   alt={skillBadge.alt}
                   width={65}
                   height={100}
+                  className="lg:w-20"
                 />
               ))}
             </div>
           </div>
-          <h2 className="col-start-2">
+          <h2 className="col-start-2 sm:mt-8">
             Certs<span>.</span>
           </h2>
           <div className="col-start-1 row-start-2">
@@ -65,7 +66,7 @@ const Skills = (props: Props) => {
                       </a>
                     </div>
                   </div>
-                  <a href="">
+                  <a href={certificate.href} target="_blank" rel="noreferrer">
                     <Image
                       src={certificate.src}
                       alt={certificate.alt}

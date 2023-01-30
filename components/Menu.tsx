@@ -31,7 +31,7 @@ const Header = (props: Props) => {
         <Image src="/logo.png" alt="logo" width={120} height={512} />
       </a>
       {showMenu ? closedMenuIcon : hamburgerIcon}
-      {showMenu && <section className="bg-white fixed top-0 left-0 w-screen">
+      {showMenu && <section className="bg-white fixed top-0 right-0 w-screen lg:w-1/3">
         <nav>
           <div className=' md:text-4xl flex flex-col text-black text-3xl font-black gap-y-8' >
             <a onClick={() => closeMenu()} href="#about">About</a>

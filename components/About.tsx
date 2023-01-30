@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { certificates } from "../constants/constants";
+import { certificates } from "../constants";
 
 type Props = {};
 
@@ -13,7 +13,7 @@ const About = (props: Props) => {
         </h2>
         <div className=" flex  flex-col justify-center gap-8 lg:grid grid-cols-2 items-center">
           <Image
-            className=" border-8 border-white rounded-3xl mx-auto mb-3 lg:w-64"
+            className=" border-8 border-white rounded-3xl mx-auto lg:w-64"
             src="/profile-pic.JPG"
             alt="profile-pic"
             width={200}
