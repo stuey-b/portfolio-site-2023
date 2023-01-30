@@ -11,9 +11,9 @@ const About = (props: Props) => {
         <h2>
           About Me<span>.</span>
         </h2>
-        <div className=" flex  flex-col justify-center gap-8 lg:grid grid-cols-2 items-center">
+        <div className="flex flex-col gap-8 lg:flex-row lg:gap-16 items-center ">
           <Image
-            className=" border-8 border-white rounded-3xl mx-auto lg:w-64"
+            className="border-8 border-white rounded-3xl mx-auto lg:w-64"
             src="/profile-pic.JPG"
             alt="profile-pic"
             width={200}

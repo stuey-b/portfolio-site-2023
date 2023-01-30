@@ -11,7 +11,7 @@ const Projects = (props: Props) => {
         <h2>
           Projects<span>.</span>
         </h2>
-        <div className="grid grid-cols-1 gap-4 auto-rows-fr text-sm md:text-base lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 auto-rows-fr text-sm md:text-base xl:grid-cols-3">
           {projects.map((project) => (
             <div
               key={project.name}
