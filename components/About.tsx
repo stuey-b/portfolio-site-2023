@@ -20,12 +20,12 @@ const About = (props: Props) => {
             height={200}
           />
           <div className="flex flex-col gap-y-8">
-          <p>
+          <p >
             In January of 2022 I turned 35 and made the decision to become a developer. I was ready for
             a new challenge and eager to leave behind my life as an English teacher.
             Nervous?&nbsp; Naturally.&nbsp; Excited?&nbsp; TOTALLY!
           </p>
-          <p>
+          <p >
             Over the past year, I&apos;ve completed 2 programming bootcamps. I
             started my coding journey with{" "}
             <a href={certificates[1].href} target="_blank" rel="noreferrer">
@@ -41,7 +41,7 @@ const About = (props: Props) => {
               <strong>{certificates[0].title}.</strong>
             </a>
           </p>
-          <p>
+          <p >
             I&apos;m currently building up my portfolio, feel free to check out
             my projects{" "}
             <a href="#projects">

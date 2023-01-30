@@ -8,12 +8,13 @@ const Skills = (props: Props) => {
   return (
     <section id="skills" className="bg-blue-100">
       <div className="InnerSection">
-        <div className="lg:grid grid-cols-2 justify-center items-center auto-rows-fr">
+        <div className="flex flex-col gap-y-16 xl:grid xl:grid-cols-2 auto-rows-fr gap-24">
+          
+          <div className="flex flex-col gap-8">
           <h2>
             Skills<span>.</span>
           </h2>
-          <div className="">
-            <div className="justify-items-center items-center grid grid-cols-3 grid-rows-4 gap-4">
+            <div className="justify-items-center items-center grid grid-cols-3 grid-rows-4 auto-rows-fr gap-4">
               {skillBadges.map((skillBadge) => (
                 <Image
                   key={skillBadge.name}
@@ -21,23 +22,24 @@ const Skills = (props: Props) => {
                   alt={skillBadge.alt}
                   width={65}
                   height={100}
-                  className="lg:w-20"
+                  className=""
                 />
               ))}
             </div>
           </div>
-          <h2 className="col-start-2 sm:mt-8">
+
+          <div className="flex flex-col gap-8">
+          <h2>
             Certs<span>.</span>
           </h2>
-          <div className="col-start-1 row-start-2">
-            <div className="justify-items-center items-start grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 justify-items-center items-center auto-rows-fr gap-4 xl:gap-y-12">
               {certificates.map((certificate) => (
                 <>
-                  <div>
-                    <h3 key={certificate.name} className="font-bold p-2">
+                  <div key={certificate.name}>
+                    <h3 className="font-bold xl:text-xl">
                       {certificate.title}
                     </h3>
-                    <div className="flex">
+                    <div className="flex xl:gap-4">
                       <a
                         href={certificate.href}
                         target="_blank"
@@ -48,7 +50,7 @@ const Skills = (props: Props) => {
                           alt="certificate-icon"
                           width={50}
                           height={50}
-                          className="h-6 mt-1"
+                          className="h-6 mt-4 xl:mt-6 xl:h-10"
                         />
                       </a>
                       <a
@@ -61,7 +63,7 @@ const Skills = (props: Props) => {
                           alt="certificate-icon"
                           width={50}
                           height={50}
-                          className="h-6 mt-1"
+                          className="h-6 mt-4 xl:mt-6 xl:h-10"
                         />
                       </a>
                     </div>
@@ -72,13 +74,19 @@ const Skills = (props: Props) => {
                       alt={certificate.alt}
                       height={10}
                       width={200}
-                      className="pt-2"
+                      className="xl:w-64"
+                    
                     />
                   </a>
                 </>
               ))}
             </div>
+
           </div>
+
+
+        
+        
         </div>
       </div>
     </section>
