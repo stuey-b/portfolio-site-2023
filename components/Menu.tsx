@@ -5,7 +5,8 @@ import Image from "next/image";
 import { CgMenuRight } from "react-icons/cg"
 import { CgClose } from "react-icons/cg"
 
-type Props = {};
+type Props = {
+};
 
 const Header = (props: Props) => {
 

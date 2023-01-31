@@ -20,9 +20,9 @@
     @apply text-4xl font-black text-slate-900 mb-4 text-center xl:text-5xl
   }
 
-  span {
+  /* span {
     @apply text-rose-500
-  }
+  } */
 
   button {
     @apply bg-transparent w-28 h-10 rounded border-2 border-slate-800 font-semibold
