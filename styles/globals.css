@@ -5,7 +5,7 @@
 @layer base {
 
   html {
-    @apply overflow-hidden
+    @apply overflow-hidden text-white
   }
 
   header {
@@ -16,16 +16,16 @@
     @apply snap-start flex flex-col justify-center items-center h-screen
   }
 
-  h2 {
-    @apply text-4xl font-black text-slate-900 mb-4 text-center xl:text-5xl
+  h1 {
+    @apply text-6xl lg:text-7xl font-black 
   }
 
-  /* span {
-    @apply text-rose-500
-  } */
+  h2 {
+    @apply text-4xl font-black text-white mb-4 text-center xl:text-5xl
+  }
 
   button {
-    @apply bg-transparent w-28 h-10 rounded border-2 border-slate-800 font-semibold
+    @apply bg-rose-500 w-28 h-10 rounded font-semibold
   }
  
 }
@@ -41,7 +41,11 @@
   }
 
   .FormInput {
-    @apply bg-transparent border-b-2 mb-2 h-10 border-slate-800 outline-none resize-none
+    @apply bg-transparent border-b-2 mb-2 h-10 border-black outline-none resize-none
+  }
+
+  .FullStop {
+    @apply text-amber-500
   }
 }
 

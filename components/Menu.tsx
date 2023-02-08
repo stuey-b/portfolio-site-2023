@@ -26,13 +26,14 @@ const Header = (props: Props) => {
 
 
   return (
+    
 
     <header>
       <a className="pl-2" href="#hero">
         <Image src="/logo.png" alt="logo" width={120} height={512} />
       </a>
       {showMenu ? closedMenuIcon : hamburgerIcon}
-      {showMenu && <section className="bg-sky-300 fixed top-0 right-0 w-screen lg:w-11/12 shadow-xl">
+      {showMenu && <section className="bg-green fixed top-0 right-0 w-screen">
         <nav>
           <div className=' md:text-4xl flex flex-col text-black text-3xl font-black gap-y-8' >
             <a onClick={() => closeMenu()} href="#about">About</a>

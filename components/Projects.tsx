@@ -6,7 +6,7 @@ type Props = {};
 
 const Projects = (props: Props) => {
   return (
-    <section id="projects" className="bg-teal-100">
+    <section id="projects" className="bg-lightBlue">
       <div className="InnerSection">
         <h2>
           Projects<span>.</span>
