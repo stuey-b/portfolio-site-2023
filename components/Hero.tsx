@@ -9,7 +9,7 @@ type Props = {
 
 const Hero = (props: Props) => {
   return (
-    <section id='hero' className='bg-blue-400'>
+    <section id='hero' className=''>
         <div className='InnerSection'>
         
           

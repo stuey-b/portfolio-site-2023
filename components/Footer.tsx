@@ -10,7 +10,7 @@ const currentYear = new Date().getFullYear();
 
 const Footer = (props: Props) => {
   return (
-    <section id="footer" className="bg-emerald-100">
+    <section id="footer" className="">
       <div className="InnerSection">
         <div className="flex justify-evenly">
           {socials.map((social) => (
@@ -31,7 +31,7 @@ const Footer = (props: Props) => {
             </a>
           ))}
         </div>
-        <div className="h-0.5 w-full bg-slate-900"></div>
+        <div className="h-0.5 w-full bg-white"></div>
         <p> © Stuart Bartlett {currentYear}</p>
       </div>
     </section>

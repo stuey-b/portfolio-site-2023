@@ -6,7 +6,7 @@ type Props = {};
 
 const About = (props: Props) => {
   return (
-    <section id="about" className="bg-teal-100">
+    <section id="about" className="">
       <div className="InnerSection">
         <h2>
           About Me<span>.</span>
@@ -48,7 +48,6 @@ const About = (props: Props) => {
               <strong>HERE.</strong>
             </a>
           </p>
-
 
           </div>
           

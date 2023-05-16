@@ -13,7 +13,7 @@
   }
 
   section {
-    @apply snap-start flex flex-col justify-center items-center h-screen
+    @apply snap-start flex flex-col justify-center items-center h-screen bg-slate-700
   }
 
   h1 {
@@ -25,7 +25,7 @@
   }
 
   button {
-    @apply bg-rose-500 w-28 h-10 rounded font-semibold
+    @apply bg-rose-600 w-28 h-10 rounded font-semibold
   }
  
 }
@@ -41,11 +41,11 @@
   }
 
   .FormInput {
-    @apply bg-transparent border-b-2 mb-2 h-10 border-black outline-none resize-none
+    @apply bg-transparent border-b-2 mb-2 h-10 border-white outline-none resize-none
   }
 
   .FullStop {
-    @apply text-amber-500
+    @apply text-rose-600
   }
 }
 
