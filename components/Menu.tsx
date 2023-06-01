@@ -15,12 +15,12 @@ const Header = (props: Props) => {
 
   const hamburgerIcon = <CgMenuRight
     className="cursor-pointer z-50"
-    size="45px"
+    size="30px"
     onClick={() => setShowMenu(!showMenu)}
   />
   const closedMenuIcon = <CgClose
     className="cursor-pointer z-50"
-    size="45px"
+    size="30px"
     onClick={() => setShowMenu(!showMenu)}
   />
 
@@ -29,13 +29,13 @@ const Header = (props: Props) => {
     
 
     <header>
-      <a className="pl-2" href="#hero">
-        <Image src="/logo.png" alt="logo" width={120} height={512} />
+      <a className="" href="#hero">
+        <Image src="/logo.png" alt="logo" width={80} height={80} />
       </a>
       {showMenu ? closedMenuIcon : hamburgerIcon}
-      {showMenu && <section className="bg-green fixed top-0 right-0 w-screen">
+      {showMenu && <section className="fixed top-0 right-0 w-screen">
         <nav>
-          <div className=' md:text-4xl flex flex-col text-white text-3xl font-black gap-y-8' >
+          <div className=' md:text-4xl flex flex-col text-white text-2xl font-black gap-y-4' >
             <a onClick={() => closeMenu()} href="#about">About</a>
             <a onClick={() => closeMenu()} href="#skills">Skills</a>
             <a onClick={() => closeMenu()} href="#projects">Projects</a>

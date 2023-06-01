@@ -9,19 +9,19 @@ const About = (props: Props) => {
     <section id="about" className="">
       <div className="InnerSection">
         <h2>
-          About Me<span>.</span>
+          About Me<span className="FullStop">.</span>
         </h2>
         <div className="flex flex-col gap-8 lg:flex-row lg:gap-16 items-center ">
           <Image
-            className="border-8 border-white rounded-3xl mx-auto lg:w-64"
+            className="border-4 border-white rounded-3xl mx-auto lg:w-64"
             src="/profile-pic.JPG"
             alt="profile-pic"
-            width={200}
-            height={200}
+            width={125}
+            height={100}
           />
           <div className="flex flex-col gap-y-8">
           <p >
-            In January of 2022 I turned 35 and made the decision to become a developer. I was ready for
+            In 2022 I made the decision to become a developer. I was ready for
             a new challenge and eager to leave behind my life as an English teacher.
             Nervous?&nbsp; Naturally.&nbsp; Excited?&nbsp; TOTALLY!
           </p>

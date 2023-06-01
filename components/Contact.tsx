@@ -15,7 +15,7 @@ const Contact = (props: Props) => {
         <label htmlFor="email-address">Email Address</label>
         <input className='FormInput' id="email-address" name="email-address" type="email" placeholder='Enter your email address' required />
         <label htmlFor="message-box">Message</label>
-        <textarea className='FormInput h-32 ' name="message" id="message-box" cols={10} rows={7}></textarea>
+        <textarea className='FormInput h-24' name="message" id="message-box" cols={10} rows={7}></textarea>
         <button type="submit">Submit</button>
         </form>
       </div>

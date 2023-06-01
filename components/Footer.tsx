@@ -24,15 +24,15 @@ const Footer = (props: Props) => {
                 key={social.name}
                 src={social.src}
                 alt={social.alt}
-                width={50}
-                height={50}
-                className="md:w-16"
+                width={35}
+                height={35}
+                className=" md:w-16"
               />
             </a>
           ))}
         </div>
         <div className="h-0.5 w-full bg-white"></div>
-        <p> © Stuart Bartlett {currentYear}</p>
+        <p className="text-xs"> © Stuart Bartlett {currentYear}</p>
       </div>
     </section>
   );

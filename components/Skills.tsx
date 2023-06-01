@@ -12,7 +12,7 @@ const Skills = (props: Props) => {
           
           <div className="flex flex-col gap-8">
           <h2>
-            Skills<span>.</span>
+            Skills<span className="FullStop">.</span>
           </h2>
             <div className="justify-items-center items-center grid grid-cols-3 grid-rows-4 auto-rows-fr gap-4">
               {skillBadges.map((skillBadge) => (
@@ -20,7 +20,7 @@ const Skills = (props: Props) => {
                   key={skillBadge.name}
                   src={skillBadge.src}
                   alt={skillBadge.alt}
-                  width={65}
+                  width={35}
                   height={100}
                   className=""
                 />
