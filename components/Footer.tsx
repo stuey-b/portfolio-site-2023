@@ -1,4 +1,3 @@
-
 import React from "react";
 import Image from "next/image";
 import { socials } from "../constants";
@@ -26,7 +25,6 @@ const Footer = (props: Props) => {
                 alt={social.alt}
                 width={35}
                 height={35}
-                className=" md:w-16"
               />
             </a>
           ))}

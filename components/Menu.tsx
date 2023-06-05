@@ -29,7 +29,7 @@ const Header = (props: Props) => {
     
 
     <header>
-      <a className="" href="#hero">
+      <a className="py-2" href="#hero">
         <Image src="/logo.png" alt="logo" width={80} height={80} />
       </a>
       {showMenu ? closedMenuIcon : hamburgerIcon}

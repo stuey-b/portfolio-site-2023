@@ -16,15 +16,15 @@ const About = (props: Props) => {
             className="border-4 border-white rounded-3xl mx-auto lg:w-64"
             src="/profile-pic.JPG"
             alt="profile-pic"
-            width={125}
+            width={100}
             height={100}
           />
-          <div className="flex flex-col gap-y-8">
-          <p >
+          <div className="flex flex-col gap-y-4">
+          {/* <p >
             In 2022 I made the decision to become a developer. I was ready for
             a new challenge and eager to leave behind my life as an English teacher.
             Nervous?&nbsp; Naturally.&nbsp; Excited?&nbsp; TOTALLY!
-          </p>
+          </p> */}
           <p >
             Over the past year, I&apos;ve completed 2 programming bootcamps. I
             started my coding journey with{" "}
@@ -34,9 +34,7 @@ const About = (props: Props) => {
                 {". "}
               </strong>
             </a>
-            I love Python! It&apos;s a pleasure to read and write. This course
-            contained a short front-end section which I really enjoyed, leading
-            me to{" "}
+            This course contained a short front-end section which lead me to{" "}
             <a href={certificates[0].href} target="_blank" rel="noreferrer">
               <strong>{certificates[0].title}.</strong>
             </a>

@@ -6,7 +6,7 @@ type Props = {
 
 const Contact = (props: Props) => {
   return (
-    <section id='contact' className="">
+    <section id='contact'>
     <div className="InnerSection">
       <h2>Contact<span className='FullStop'>.</span></h2>
         <form className="flex flex-col" action="https://formsubmit.co/579966cea5135f4b6077924ca707340c" method="post">
@@ -16,7 +16,7 @@ const Contact = (props: Props) => {
         <input className='FormInput' id="email-address" name="email-address" type="email" placeholder='Enter your email address' required />
         <label htmlFor="message-box">Message</label>
         <textarea className='FormInput h-24' name="message" id="message-box" cols={10} rows={7}></textarea>
-        <button type="submit">Submit</button>
+        <button>Submit</button>
         </form>
       </div>
   </section>

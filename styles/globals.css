@@ -21,7 +21,11 @@
   }
 
   h2 {
-    @apply text-2xl font-black text-white mb-4 text-center xl:text-5xl
+    @apply text-2xl font-black text-white pb-2 text-center xl:text-5xl
+  }
+
+  h3 {
+    @apply text-xs font-bold xl:text-xl
   }
 
   p {
@@ -33,7 +37,7 @@
   }
 
   label {
-    @apply text-sm
+    @apply text-sm mb-2
   }
  
 }
